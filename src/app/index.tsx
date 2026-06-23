@@ -1,11 +1,11 @@
-import { useState, useEffect, useCallback } from 'react';
-import { StyleSheet, FlatList, ActivityIndicator, View, RefreshControl, Platform } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
+import { useCallback, useEffect, useState } from 'react';
+import { ActivityIndicator, FlatList, Platform, RefreshControl, StyleSheet, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { MaxContentWidth, Spacing, BottomTabInset } from '@/constants/theme';
+import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 
 // OpenSky states vector mapping:
